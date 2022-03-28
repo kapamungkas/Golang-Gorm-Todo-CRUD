@@ -1,10 +1,10 @@
 package routes
 
 import (
-	"todo-api/handlers"
-	"todo-api/services"
+	"todo-api/internal/handlers"
+	"todo-api/internal/services"
 
-	"todo-api/repository"
+	"todo-api/internal/repository"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"

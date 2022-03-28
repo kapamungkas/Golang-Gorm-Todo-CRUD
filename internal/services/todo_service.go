@@ -1,9 +1,9 @@
 package services
 
 import (
-	"todo-api/entity"
-	"todo-api/repository"
-	"todo-api/request"
+	"todo-api/internal/entity"
+	"todo-api/internal/repository"
+	"todo-api/internal/request"
 )
 
 type TodoService interface {
@@ -31,8 +31,7 @@ func (t todoService) GetAllTodo() ([]entity.Todo, error) {
 }
 
 func (t todoService) FindByIDTodo(id int) (entity.Todo, error) {
-	todo, err := t.todoRepository.FindByIDTodo(id)
-	return todo, err
+	return t.todoRepository.FindByIDTodo(id)
 }
 
 func (t todoService) CreateTodo(todoRequest request.TodoRequest) (entity.Todo, error) {

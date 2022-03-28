@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 	"strconv"
-	"todo-api/request"
-	"todo-api/services"
+	"todo-api/internal/request"
+	"todo-api/internal/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"

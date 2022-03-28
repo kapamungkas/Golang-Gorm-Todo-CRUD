@@ -1,10 +1,10 @@
 package main
 
 import (
-	"todo-api/database"
-	"todo-api/routes"
-
 	"github.com/gin-gonic/gin"
+
+	"todo-api/internal/database"
+	"todo-api/internal/routes"
 )
 
 func main() {

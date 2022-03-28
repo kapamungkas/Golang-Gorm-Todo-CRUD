@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"todo-api/entity"
-
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+
+	"todo-api/internal/entity"
 )
 
 func InitMysqlDB() (*gorm.DB, error) {

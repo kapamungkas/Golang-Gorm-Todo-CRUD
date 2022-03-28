@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"todo-api/entity"
+	"todo-api/internal/entity"
 
 	"gorm.io/gorm"
 )
